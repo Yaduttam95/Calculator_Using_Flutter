@@ -38,10 +38,12 @@ class SplashScreenState extends State<Splash> {
           // ),
         ),
         child: Container(
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(20))),
           padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-          color: Colors.white,
           child: Text(
-            "Made with ❤️\nBy Yaduttam Pareek",
+            "Made By\nYaduttam Pareek",
             style: TextStyle(
               fontSize: 20,
               color: Colors.black,

@@ -66,7 +66,7 @@ class MainScreen extends StatelessWidget {
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(50), topRight: Radius.circular(50))),
           child: GridView.builder(
-              padding: EdgeInsets.only(top: 27),
+              padding: const EdgeInsets.only(top: 30),
               physics: const NeverScrollableScrollPhysics(),
               itemCount: buttons.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -133,7 +133,9 @@ class MainScreen extends StatelessWidget {
                             ? DarkColors.btnBgColor
                             : LightColors.btnBgColor,
                         textColor: isOperator(buttons[index])
-                            ? LightColors.operatorColor
+                            ? themeController.isDark
+                                ? DarkColors.operatorColor
+                                : LightColors.operatorColor
                             : themeController.isDark
                                 ? Colors.white
                                 : Colors.black,

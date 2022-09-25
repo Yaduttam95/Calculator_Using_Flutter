@@ -5,6 +5,7 @@ class DarkColors {
   static const scaffoldBgColor = Color(0xff525252);
   static const sheetBgColor = Color(0xff414141);
   static const btnBgColor = Color(0xff313131);
+  static const operatorColor = Color(0xffE46468);
   static const leftOperatorColor = Color(0xffBBE1FA);
 }
 
