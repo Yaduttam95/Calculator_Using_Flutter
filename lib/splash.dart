@@ -14,7 +14,7 @@ class SplashScreenState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 5),
+        const Duration(seconds: 1),
         () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => MainScreen())));
   }
